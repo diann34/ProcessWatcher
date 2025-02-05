@@ -29,7 +29,6 @@ namespace ProcessWatcher
             Console.WriteLine("本程序旨在监测特定进程运行情况，并在符合条件时执行设置的操作");
             Console.WriteLine("请输入被监测进程名称(eg. \"notepad\"为notepad.exe):");
             string processname = Console.ReadLine();
-            /*
             Console.WriteLine("请输入监测间隔时长(单位:ms)(若无效则设置为默认值5000):");
             if (uint.TryParse(Console.ReadLine(), out uint delay))
             {
@@ -37,7 +36,6 @@ namespace ProcessWatcher
                 else { delayms = TimeSpan.FromMilliseconds(delay); }
             }
             else { Console.WriteLine("输入无效，已设置为默认值5000"); delayms = TimeSpan.FromMilliseconds(5000); }
-            */
         chooseevent:
             Console.WriteLine("请设置要监测的程序行为触发器：1.目标进程终止 2.检测到目标进程 3.进程执行超时");
             switch ((char)Console.ReadKey().Key)
